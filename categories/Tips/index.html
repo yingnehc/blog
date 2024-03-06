@@ -308,3 +308,120 @@
 
 </body>
 </html>
+5/30/Aquamacs-for-Mac-Emacs-for-Windows/">
+              Emacs
+            </a>
+          </div>
+        </div>
+      
+        
+          </section>
+        
+        <div class="archive-post">
+          <div class="archive-post-content">
+            
+              <h4 id="How-is-Notepad-better-than-STATA’s-default-do-file-editor"><a href="#How-is-Notepad-better-than-STATA’s-default-do-file-editor" class="headerlink" title="How is Notepad++ better than STATA’s default do-file editor?"></a>How is Notepad++ better than STATA’s default do-file editor?</h4><p>Notepad++ offers all the functionality of the STATA editor, and it allows for customization. Additionally, it includes productivity-enhancing functions such as ‘find and replace’, ‘move current line up/down’, ‘block commenting’, ‘record/play macro’, and more. You can also split windows to view two do-files side by side (right-click the tab and choose ‘move to other view’), or see one do-file in two split windows (right-click the tab and choose ‘clone to other view’) to view different sections without scrolling.</p>
+<h4 id="Here-are-some-functions-that-I-find-useful-see-this-page-for-a-full-list-of-nice-functions-and-corresponding-hot-keys"><a href="#Here-are-some-functions-that-I-find-useful-see-this-page-for-a-full-list-of-nice-functions-and-corresponding-hot-keys" class="headerlink" title="Here are some functions that I find useful (see this page for a full list of nice functions and corresponding hot keys):"></a>Here are some functions that I find useful (see <a href="http://www.keyxl.com/aaacd5a/43/Notepad-Plus-text-editor-software-keyboard-shortcuts.htm" target="_blank" rel="noopener">this page</a> for a full list of nice functions and corresponding hot keys):</h4><ul>
+<li><strong>Tab, Shft-Tab:</strong> add (without Shft) and remove (with Shft) indentation for current line (or selection). This makes layers of loop easy to read.</li>
+<li><strong>Ctrl-F/H:</strong> find/replace. Its pop-up window also has advanced find/replace options.</li>
+<li><strong>Ctrl-Shft-Up/Down:</strong> move the current line (or selection) up/down. This beats copying and pasting.</li>
+<li><strong>Ctrl-Shft-U, Ctrl-U:</strong> convert current line (or selection) to upper case with Shft, and lower case without Shft.</li>
+<li><strong>Ctrl-Shft-Q, Ctrl-Q:</strong> stream comment current line (or selection) with Shft (wich is /* */ in STATA), and block comment/uncomment without Shft (which is *).</li>
+<li><strong>Ctrl-Shft-R, Ctrl-Shft-P:</strong> start/stop to record macro (with R) and play recorded macro (with P). This set of functions are extremely helpful for repetitive tasks.</li>
+<li><strong>Ctrl-G:</strong> brings a window for you to type in the line number that you want to go to.</li>
+<li><strong>Ctrl-B:</strong> go to matching brace.<br>Alt-Left mouse click: column selection instead of row selection.</li>
+</ul>
+<p><em>Bottom line: if you’re a frequent STATA user but not a hardcore programmer (they have Vim and such), coding with Notepad++ will make you more efficient.</em></p>
+<h2 id="Notepad-and-STATA-integration"><a href="#Notepad-and-STATA-integration" class="headerlink" title="Notepad++ and STATA integration:"></a>Notepad++ and STATA integration:</h2><ol>
+<li><a href="http://notepad-plus-plus.org/" target="_blank" rel="noopener">Download</a> the latest Notepad++ and install it.</li>
+<li>Set up hot keys to pass code from Notepad++ to STATA (like Ctrl-D in STATA’s editor).<ul>
+<li>Follow <a href="https://huebler.blogspot.com/search?q=notepad%2B%2B" target="_blank" rel="noopener">this instruction by Friedrich Huebler</a>. Or,</li>
+<li>In the case where you get your new version of STATA before Huebler gets to update his files (for STATA 12, there was a 2-month lag), then knowing how to create your own ‘rundo’ programs through <a href="https://www.autoitscript.com/site/autoit/" target="_blank" rel="noopener">AutoIt</a> will solve your problem. See <a href="https://github.com/kkranker/notepad-stats-integration" target="_blank" rel="noopener">this instruction by Keith Kranker</a> for details.</li>
+</ul>
+</li>
+<li>Set up syntax highlighting: it makes writing do-file more fun and reading it much easier. Below is a snapshot of how it looks. I suggest you download a ready-made syntax file (e.g., <a href="https://gist.github.com/bquistorff/4229749e85c90e45ddc9" target="_blank" rel="noopener">this one</a>) and modify it according to your own liking.</li>
+</ol>
+<p><img src="/images/2020/05/30/efca243b-fa88-46f4-b1c6-ee0918d1086a.gif" alt=""></p>
+<h4 id="Here-are-the-steps"><a href="#Here-are-the-steps" class="headerlink" title="Here are the steps:"></a>Here are the steps:</h4><ul>
+<li>Save the syntax highlighting file in .xml format.</li>
+<li>In Notepad++, click on ‘Language’ on your toolbar, and select ‘Define your language’. In the pop-up window, click on ‘Import’ and navigate to the directory where you saved the xml file. You should see ‘Import successful’.</li>
+<li>You can customize all the options to assign colors of your choice to different specifications. Either way, remember to save it and give it a name, say ‘STATA syntax’.</li>
+<li>Restart Notepad++, and open a do file.</li>
+<li>Go to the ‘Language’ option and click on ‘STATA syntax’, or whatever name you used.</li>
+<li>From now on, any do-file you open with Notepad++ will have Stata syntax highlighting. You can also set it as your default do-file editor, if you wish.</li>
+</ul>
+<p><em>You could also setup auto-completion and/or spell-check, but I think they’re a bit of an overkill (still, see <a href="https://github.com/kkranker/notepad-stats-integration" target="_blank" rel="noopener">Kranker’s</a> page for more details).</em></p>
+
+            
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2020-05-28
+            </time>
+            <a  class="archive-post-link" href="/2020/05/28/Notepad-for-Windows-users/">
+              Notepad++: for Windows users
+            </a>
+          </div>
+        </div>
+      
+      
+        </section></section>
+      
+  </div>
+  
+  <nav class="pagination">
+      <span class="page-number current">1</span>
+  </nav>
+
+
+
+
+        </div>
+      </main>
+    </div>
+    <div class="tagcloud" id="tagcloud">
+  <div class="tagcloud-taglist">
+  
+  </div>
+  
+</div>
+
+  </div>
+  <div class="backtop syuanpi melt toTop" id="backtop">
+    <i class="iconfont icon-up"></i>
+    <span style="text-align:center;font-family:Georgia;"><span style="font-family:Georgia;" id="scrollpercent">1</span>%</span>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+
+
+  <script></script>
+  <script src="/script/lib/lightbox/js/lightbox.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/script/scheme/banderole.js"></script>
+
+
+
+
+<script src="/script/bootstarp.js"></script>
+
+
+
+
+
+</body>
+</html>
