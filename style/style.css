@@ -1968,3 +1968,26 @@ body.under {
 .search #search-result .search-result-list .search-keyword {
   color: #383838;
 }
+.post.stata {
+  margin-top: 0;
+}
+.post.stata .post-header {
+  margin-bottom: 0;
+}
+.post.stata .post-header .post-title {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.research-tag {
+  display: inline-block;
+  background-color: #f0f8ff;
+  color: #4a5568;
+  padding: 2px 7px;
+  margin: 1px 2px;
+  border-radius: 3px;
+  font-size: 0.7em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace;
+  border: 1px solid #cce7ff;
+  font-weight: 500;
+  text-transform: lowercase;
+}
